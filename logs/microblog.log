@@ -1,0 +1,39 @@
+2022-04-11 13:25:39,692 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:62]
+2022-04-11 13:29:47,755 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:62]
+2022-04-11 13:32:21,520 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:62]
+2022-04-12 09:11:01,041 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:62]
+2022-04-12 09:11:29,845 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:62]
+2022-04-12 09:11:31,097 ERROR: Exception on / [GET] [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py", line 1521, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py", line 1861, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\main\routes.py", line 18, in before_request
+    g.locale = str(get_locale())
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask_babel\__init__.py", line 226, in get_locale
+    rv = babel.locale_selector_func()
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py", line 68, in get_locale
+    return request.accept_languages.best_match(current_app.config['LANGUAGES'])
+NameError: name 'current_app' is not defined
+2022-04-12 09:12:33,019 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:62]
+2022-04-12 09:30:52,144 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:62]
+2022-04-12 09:34:20,716 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:62]
+2022-04-12 09:57:14,140 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:62]
+2022-04-12 09:57:39,889 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:62]
+2022-04-12 10:19:26,915 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:62]
+2022-04-12 10:19:41,316 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:62]
+2022-04-12 11:22:06,453 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:62]
+2022-04-12 11:28:27,982 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:62]
+2022-04-12 12:43:09,836 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:62]
+2022-04-13 21:27:13,874 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:64]
+2022-04-13 21:37:13,349 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:64]
+2022-04-13 21:40:01,854 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:64]
+2022-04-13 21:42:54,155 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:64]
+2022-04-13 23:59:29,871 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:64]
+2022-04-14 01:17:22,349 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:64]
+2022-04-14 01:34:31,053 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:64]

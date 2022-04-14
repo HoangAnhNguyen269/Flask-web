@@ -1,0 +1,89 @@
+2022-04-04 17:30:06,317 ERROR: Exception on /reset_password_request [POST] [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask_mail.py", line 492, in send
+    message.send(connection)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask_mail.py", line 427, in send
+    connection.send(self)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask_mail.py", line 177, in send
+    assert message.sender, (
+AssertionError: The message does not specify a sender and a default sender has not been configured
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\routes.py", line 88, in reset_password_request
+    send_password_reset_email(user)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\email.py", line 14, in send_password_reset_email
+    send_email('[Microblog] Reset Your Password',
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\email.py", line 10, in send_email
+    mail.send(msg)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask_mail.py", line 152, in __exit__
+    self.host.quit()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 1004, in quit
+    res = self.docmd("quit")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 431, in docmd
+    self.putcmd(cmd, args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 378, in putcmd
+    self.send(f'{s}{CRLF}')
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 365, in send
+    raise SMTPServerDisconnected('please run connect() first')
+smtplib.SMTPServerDisconnected: please run connect() first
+2022-04-04 17:30:31,462 ERROR: Exception on /reset_password_request [POST] [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask_mail.py", line 492, in send
+    message.send(connection)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask_mail.py", line 427, in send
+    connection.send(self)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask_mail.py", line 177, in send
+    assert message.sender, (
+AssertionError: The message does not specify a sender and a default sender has not been configured
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\routes.py", line 88, in reset_password_request
+    send_password_reset_email(user)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\email.py", line 14, in send_password_reset_email
+    send_email('[Microblog] Reset Your Password',
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\email.py", line 10, in send_email
+    mail.send(msg)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask_mail.py", line 152, in __exit__
+    self.host.quit()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 1004, in quit
+    res = self.docmd("quit")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 431, in docmd
+    self.putcmd(cmd, args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 378, in putcmd
+    self.send(f'{s}{CRLF}')
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 365, in send
+    raise SMTPServerDisconnected('please run connect() first')
+smtplib.SMTPServerDisconnected: please run connect() first
+2022-04-04 17:33:55,049 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:33]
+2022-04-04 17:37:15,211 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:33]
+2022-04-04 17:50:30,175 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:33]
+2022-04-04 17:52:56,933 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:33]
+2022-04-04 17:59:32,982 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:33]
+2022-04-04 18:00:35,565 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:33]
+2022-04-04 18:06:37,965 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:33]
+2022-04-04 18:14:12,786 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:33]
+2022-04-04 18:19:58,051 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:33]

@@ -1,0 +1,73 @@
+2022-04-04 18:20:06,980 ERROR: Exception on /reset_password_request [POST] [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\routes.py", line 88, in reset_password_request
+    send_password_reset_email(user)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\email.py", line 14, in send_password_reset_email
+    send_email('[Microblog] Reset Your Password',
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\email.py", line 10, in send_email
+    mail.send(msg)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask_mail.py", line 492, in send
+    message.send(connection)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask_mail.py", line 427, in send
+    connection.send(self)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask_mail.py", line 177, in send
+    assert message.sender, (
+AssertionError: The message does not specify a sender and a default sender has not been configured
+2022-04-04 18:22:03,341 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:33]
+2022-04-04 18:22:14,406 ERROR: Exception on /reset_password_request [POST] [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\routes.py", line 88, in reset_password_request
+    send_password_reset_email(user)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\email.py", line 14, in send_password_reset_email
+    send_email('[Microblog] Reset Your Password',
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\email.py", line 10, in send_email
+    mail.send(msg)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask_mail.py", line 492, in send
+    message.send(connection)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask_mail.py", line 427, in send
+    connection.send(self)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask_mail.py", line 177, in send
+    assert message.sender, (
+AssertionError: The message does not specify a sender and a default sender has not been configured
+2022-04-04 18:26:24,990 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:33]
+2022-04-04 18:29:32,457 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:33]
+2022-04-04 18:29:40,421 ERROR: Exception on /reset_password_request [POST] [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\routes.py", line 88, in reset_password_request
+    send_password_reset_email(user)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\email.py", line 14, in send_password_reset_email
+    send_email('[Microblog] Reset Your Password',
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\email.py", line 10, in send_email
+    mail.send(msg)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask_mail.py", line 492, in send
+    message.send(connection)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask_mail.py", line 427, in send
+    connection.send(self)
+  File "D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\venv\lib\site-packages\flask_mail.py", line 177, in send
+    assert message.sender, (
+AssertionError: The message does not specify a sender and a default sender has not been configured
+2022-04-04 18:32:52,108 INFO: Microblog startup [in D:\OneDriveJCU\OneDrive - James Cook University\Learning material\Semester 6\CP3405-Design Thinking and Project Management\Learn Flask\Chapter 1\app\__init__.py:33]
